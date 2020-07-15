@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/edit_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+
+        <View
+                android:layout_width="0dip"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        <Button
+                android:id="@+id/edit_done_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/edit_date_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date" />
+
+        <View
+                android:layout_width="0dip"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        <Button
+                android:id="@+id/edit_weather_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather" />
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/edit_photo_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="#cccccc" />
+
+
+    <EditText
+            android:id="@+id/modify_content_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:hint="Content"
+            android:lines="5"
+            android:maxLength="70"
+            android:textSize="20dp" />
+</LinearLayout>
